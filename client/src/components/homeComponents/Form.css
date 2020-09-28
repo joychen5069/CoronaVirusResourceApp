@@ -1,0 +1,41 @@
+.formsWrapper {
+  margin: 1rem;
+}
+
+.formCol {
+  border: 1px solid #bcbdbd;
+  background-color: rgba(213, 221, 221, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem 2.4rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.signUpBtn, .loginBtn {
+  background-color: #33b8a2;
+  color: white;
+}
+
+.loginBtn {
+  margin: 0 auto!important;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.raceBtnWrapper {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.raceBtn, .genderBtn {
+  background-color: #c5c4c4;
+  color: #22075f;
+  border: .5px solid #a1a1a1;
+}
+
+.genderBtn {
+  background-color: #c5c4c4;
+  margin-left: 3.4rem;
+}

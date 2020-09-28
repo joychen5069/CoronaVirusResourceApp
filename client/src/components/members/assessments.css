@@ -1,0 +1,135 @@
+.membersPageTitle {
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, .5);
+  margin-bottom: 2rem;
+}
+
+.assessmentCol {
+  background-color: #f5ecf0;
+  box-shadow: 6px 1px 6px rgba(98, 98, 98, .2);
+  height: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.assessmentCol h5 {
+  text-align: center;
+  color: #22075f;
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+.assessmentCol h6 {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.checkText {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.checkText input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(173, 173, 173);
+}
+
+.checkText:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.checkText input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkText input:checked~.checkmark:after {
+  display: block;
+}
+
+.checkText .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn-choice {
+  background-color: #33b8a293;
+  margin: 15px;
+}
+
+.nextBtnWrapper {
+  margin-left: 0;
+  text-align: center;
+}
+
+.checkTextFinal {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.next-question {
+  background-color: #33b8a2;
+  color: white;
+}
+
+.yes_no_wrapper {
+  text-align: center;
+}
+
+.yes_no_button {
+  margin: 1rem 0;
+}
+
+.disclaimer {
+  line-height: 1;
+  font-size: .8rem
+}
+
+.disclosure {
+  font-weight: bold;
+  font-size: .8rem
+}

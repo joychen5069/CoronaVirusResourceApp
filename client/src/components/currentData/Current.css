@@ -1,0 +1,18 @@
+.dataCol {
+    padding: 20px;
+    background-color: #f5ecf0;
+    margin-top: 2rem!important;
+    margin-left: 1rem!important;
+    box-shadow: 6px 1px 6px rgba(98, 98, 98, .2);
+    height: auto;
+    /* margin: 0 auto!important; */
+  }
+
+  .dataTitle{
+      font-weight: bolder;
+      margin-bottom: 0.5rem;
+  }
+
+  #currentOne, #test, #cummulativeOne{
+      margin-bottom: 1rem !important;
+  }

@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer";
 import Navbar from "../components/navigation/Navbar";
 
 import StateSearch from "../components/members/StateSearch"
-import StateData from "../components/currentData/stateData";
+// import StateData from "../components/currentData/stateData";
 import "../components/newsComponent/news.css";
 
 const ChartComp = (props) => {
@@ -18,7 +18,7 @@ const ChartComp = (props) => {
         <StateSearch />
 
         <div className="row">
-          <StateData />
+          {/* <StateData /> */}
         </div>
         <Footer />
       </div>

@@ -61,6 +61,7 @@ class Map extends Component {
       if (states[i][1] === abrv) {
         const stateParam = states[i][0]
         this.props.province(stateParam);
+        this.props.value(abrv.toLowerCase())
       }
     }
   };

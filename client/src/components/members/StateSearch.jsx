@@ -2,9 +2,14 @@ import React from "react";
 import axios from "axios";
 import Map from "./Map";
 import CountyDropdown from "./CountyDropdown";
+import StateChart from "../chart/stateChart";
 import "./map.css";
 
 export default class StateSearch extends React.Component {
+  date = new Date().getDate() - 1;
+  month = new Date().getMonth() + 1;
+  year = new Date().getFullYear();
+  
   constructor() {
     super();
     this.state = {
@@ -70,14 +75,15 @@ export default class StateSearch extends React.Component {
       <>
         <div className="row">
           <div className="col-3" id="stateData">
+            <div className="dataWrapper">
             <h5 className="dataTitle">{this.state.province} Data</h5>
             <p>Total Tests: {this.state.data.totalTestResults}</p>
             <p>Positive Tests: {this.state.data.positive}</p>
             <p>Negative Tests: {this.state.data.negative}</p>
             <p>Currently Hospitalized: {this.state.data.hospitalizedCurrently}</p>
             <p>Deaths: {this.state.data.death}</p>
-          
           <p className="disclosure">Disclosure: All data is sourced from The COVID Tracking Project and is up-to-date as of {this.month}/{this.date}/{this.year}. Please note that not all testing is reported and numbers may slightly vary from CDC data. </p>
+          </div>
           </div>
           <div className="col-9">
             <div className="mapWrapper">
@@ -96,6 +102,9 @@ export default class StateSearch extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <StateChart />
         </div>
       </>
     );

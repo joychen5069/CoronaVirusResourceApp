@@ -11,7 +11,7 @@ path:hover {
   text-align: center !important;
 }
 
-.mapWrapper {
+.mapWrapper{
   margin: 0 auto!important;
   padding: 20px;
   text-align: center;
@@ -81,4 +81,19 @@ path:hover {
 
 .dataNumber, .stateName {
   color: brown;
+}
+
+.dataWrapper{
+  margin: 0 auto!important;
+  padding: 20px;
+  text-align: left;
+  background-color: #f5ecf0;
+  margin-top: 2rem!important;
+  box-shadow: 6px 1px 6px rgba(98, 98, 98, .2);
+}
+
+.disclosure {
+  margin-top: 10em;
+  font-weight: bold;
+  font-size: .7em
 }

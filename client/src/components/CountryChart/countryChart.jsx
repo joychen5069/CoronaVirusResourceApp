@@ -1,6 +1,7 @@
 import React from'react';
 import { Component } from 'react'
 import CanvasJSReact from'../chart/canvasChart/canvasjs.react';
+import './countryChart.css'
 import axios from 'axios';
 
 let CanvasJS = CanvasJSReact.CanvasJS;
@@ -28,7 +29,8 @@ export default class StateChart extends Component {
  
 	render() {	
 		const options = {
-			theme: "dark2",
+			theme: "light2",
+			// backgroundColor: "#f5ecf0",
 			title: {
 				text: "US Case Trend"
 			},
@@ -44,7 +46,7 @@ export default class StateChart extends Component {
 			}]
 		}
 		return (
-		<div>
+		<div className="countryChart">
 			<CanvasJSChart options = {options} 
 				 onRef={ref => this.chart = ref}
 			/>

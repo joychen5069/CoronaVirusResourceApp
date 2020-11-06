@@ -14,10 +14,8 @@ const Members = (props) => {
         <Navbar logout={props.logout} />
         <h3 className="text-center pageTitle">Welcome to your members dashboard!</h3>
         
-        <div className="container">
-        
-          <div className="row">
-          
+        <div className="container">        
+          <div className="row">          
             <div className="col-sm-12 col-md-4">
             <CurrentData />
             </div>

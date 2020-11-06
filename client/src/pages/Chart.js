@@ -16,7 +16,7 @@ const ChartComp = (props) => {
         <h3 className="text-center pageTitle">Country and State Trends</h3>
         <StateSearch />
         <div className="row">
-          <StateChart />
+          {/* <StateChart /> */}
         </div>
         <Footer />
       </div>

@@ -4,7 +4,7 @@ import USAMap from "react-usa-map";
 
 class Map extends Component {
   mapHandler = (event) => {
-    const abrv = event.target.dataset.name
+    const abrv = event.target.dataset.name;
     var states = [
       ['Arizona', 'AZ'],
       ['Alabama', 'AL'],
@@ -61,7 +61,8 @@ class Map extends Component {
       if (states[i][1] === abrv) {
         const stateParam = states[i][0]
         this.props.province(stateParam);
-        this.props.value(abrv.toLowerCase())
+        this.props.value(abrv.toLowerCase());
+        this.props.chartValue(abrv)
       }
     }
   };
